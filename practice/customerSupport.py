@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 API_KEY = os.environ.get("API_KEY")
-AUTH_TOKEN = os.environ.get("ACCESS_TOKEN")
 co = cohere.Client(API_KEY)
 
 from cohere.responses.classify import Example
